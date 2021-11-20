@@ -1,16 +1,56 @@
 <html>
-    <head>
+  <head>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Simple Interest Calculator</h1>
+    <table id="table1">
+      <tr>
+        <td>Amount</td>
+        <td><input type="number" id="principal" /></td>
+      </tr>
+      <tr>
+        <td>Interset Rate</td>
+        <td>
+          <input
+            type="range"
+            min="1"
+            max="20"
+            value="10.5"
+            id="myrate"
+            step="0.5"
+            oninput="slidercall()"
+          />
+          <span id="slidervalue" type="number">10.5</span
+          ><label for="slidervalue">%</label>
+        </td>
+      </tr>
+      <tr>
+        <td>No. of Years</td>
+        <td>
+          <select name="years" id="yrs">
+            <option id="value1" value="1">1</option>
+            <option id="value2" value="2">2</option>
+            <option id="value3" value="3">3</option>
+            <option id="value4" value="4">4</option>
+            <option id="value5" value="5">5</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><button onclick="compute()">Compute Interest</button></td>
+      </tr>
+    </table>
+    <div id="resultdiv">
+      <span id="result"></span><span id="result2"></span> <br />
+      <span id="resulta"></span><span id="result3"><br /></span><br /><span
+        id="resultb"
+      ></span
+      ><span id="result4"><br /></span><br /><span id="resultc"></span
+      ><span id="result5"></span>
+    </div>
+    <br />
+    <footer>&copy Everyone can get rich</footer>
+  </body>
 </html>

@@ -1,4 +1,44 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+  background-color: white;
+  font-size: larger;
+}
+
+h1 {
+  color: grey;
+  margin-top: 50px;
+  font-size: 60px;
+}
 
 
+#table1 {
+  forced-color-adjust: black;
+  font-size: 20px;
+  margin-left: 100px;
+  width: 405px;
+  height: 135px;
+}
+
+#myrange{
+    width: 74%;
+}
+
+#resultdiv{
+
+    margin-left: 100px;
+}
+#result2{
+
+    background-color: yellow;
+}
+#result3{
+
+  background-color: yellow;
+}
+#result4{
+
+  background-color: yellow;
+}
+#result5{
+
+  background-color: yellow;
+}
